@@ -9,11 +9,11 @@ sudo apt-get install git
 ```
 Сделать fork репозитория:
 ```
-git clone https://github.com/NankuF/dvmn_api_web_service.git
+git clone https://github.com/NankuF/dvmn_send_email.git.git
 ```
 Перейти в директорию со скриптом:
 ```
-cd ~ && cd dvmn_api_web_service/
+cd ~ && cd dvmn_send_email.git/
 ```
 Создать виртуальное окружение:
 ```
