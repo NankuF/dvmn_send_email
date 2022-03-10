@@ -6,7 +6,7 @@ load_dotenv()
 login = os.getenv('EMAIL_LOGIN')
 password = os.getenv('EMAIL_PASSWORD')
 sender = os.getenv('SENDER_MAIL')
-receiver = os.getenv('RECEIVER_MAIL')
+receivers = os.getenv('RECEIVERS_MAIL')
 
 website = 'dvmn.org'
 link = 'https://dvmn.org/referrals/svPQW6zRN1ZjPHofEYOQbsC3YQ2HV9RyR4mpUWBb/'
@@ -33,7 +33,7 @@ text = f"""
 """
 letter = f"""\
 From: {sender}
-To: {receiver}
+To: {receivers}
 Subject: Курсы со скидкой 30% на dvmn.org
 Content-Type: text/plain; charset="UTF-8";
 {text}
@@ -42,5 +42,5 @@ letter = letter.encode('utf-8')
 
 server = smtplib.SMTP_SSL('smtp.yandex.ru:465')
 server.login(login, password)
-server.sendmail(sender, [receiver], letter)
+server.sendmail(sender, [receivers], letter)
 server.quit()
