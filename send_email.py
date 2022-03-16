@@ -1,8 +1,3 @@
-"""
-Чтобы письмо отправлялось через функцию, нужно отслеживать отступы в тройных кавычках,
-используется textwrap.dedent(), чтобы эти отступы убрать, не нарушая PEP
-"""
-
 import os
 import smtplib
 from dotenv import load_dotenv
