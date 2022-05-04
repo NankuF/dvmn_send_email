@@ -27,6 +27,14 @@ python -m venv venv
 ```
 pip install -r requirements.txt 
 ```
+Создать файл .env и указать в нем переменные:
+```
+EMAIL_LOGIN=your_login
+EMAIL_PASSWORD=пароль_для_приложений.(это не пароль от почты)
+SENDER_MAIL=your_login@yandex.ru
+RECEIVERS_MAIL=your_login@yandex.ru (получатель - вы сами)
+```
+
 
 **Запуск:** <br>
 
