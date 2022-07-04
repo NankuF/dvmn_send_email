@@ -9,11 +9,11 @@ sudo apt-get install git
 ```
 Сделать fork репозитория:
 ```
-git clone https://github.com/NankuF/dvmn_send_email.git
+git clone https://github.com/NankuF/send_email.git
 ```
 Перейти в директорию со скриптом:
 ```
-cd ~ && cd dvmn_send_email/
+cd ~ && cd send_email/
 ```
 Создать виртуальное окружение:
 ```
